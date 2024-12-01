@@ -1,9 +1,6 @@
 package org.example;
 
-import org.example.entity.Priority;
-import org.example.entity.Status;
-import org.example.entity.Task;
-import org.example.entity.TaskData;
+import org.example.entity.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,13 +8,14 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
 
-        testGetUnion();
-        testGetIntersect();
-        testGetDifference();
+        //testGetUnion();
+        //testGetIntersect();
+        //testGetDifference();
+
 
     }
 
-    private static void testGetUnion() {
+   /* private static void testGetUnion() {
         Set<Task> annsTasks = new HashSet<>();
         annsTasks.add(new Task("ProjectA", "Task 1", "Ann", Priority.HIGH, Status.IN_PROGRESS));
 
@@ -62,7 +60,7 @@ public class Main {
         Set<Task> difference = taskData.getDifference(annsTasks, bobsTasks);
         System.out.println("Difference size: " + difference.size());
         System.out.println("Difference contains Task 1: " + difference.isEmpty());
-    }
+    }*/
 
 
 }
